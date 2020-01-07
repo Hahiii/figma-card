@@ -4,3 +4,14 @@
 
 @import 'variables';
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    width: 400px;
+    border-radius: 10px;
+}
