@@ -4,14 +4,51 @@
 
 @import 'variables';
 
+// Wrapper
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Geneva, Tahoma, sans-serif;
 }
 
 .card-container {
     width: 400px;
     border-radius: 10px;
+}
+
+// header / hero
+.card-header {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 147px;
+    background: $header-background;
+}
+
+.card-header-label {
+    margin-top: 20px;
+    align-self: flex-end;
+    background: $label-new-BGcolor;
+}
+
+.card-header-label h4 {
+    padding: 4px 13px;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: $label-new-color;
+}
+
+.card-header-title {
+    padding: 20px 0px 0px 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: $header-title-color;
 }
