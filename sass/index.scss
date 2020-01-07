@@ -46,7 +46,7 @@
     }
 }
 .card-header-title {
-    padding: 20px 0px 0px 30px;
+    padding: 20px 0px 0px 32px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -115,14 +115,14 @@
 
 .card-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 0px 0px 10px 10px;
     background: $footer-background;
     padding: 18px 0px;
    
     p {
         margin: 0;
-        padding: 0px 10px 0px 28px;
+        padding: 0px 0px 0px 32px;
         text-align: center;
         font-style: normal;
         font-weight: 300;
@@ -137,7 +137,7 @@
     }
     p:last-child {
         margin: 0;
-        padding: 0px 28px 0px 10px;
+        padding: 0px 32px 0px 0px;
     }
     hr {
         margin: 0;
