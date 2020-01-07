@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Geneva, Tahoma, sans-serif;
+    font-family: Geneva, sans-serif;
+    background-color: #E5E5E5;
 }
 
 .card-container {
@@ -18,7 +19,7 @@
     border-radius: 10px;
 }
 
-// header / hero
+// header 
 .card-header {
     display: flex;
     flex-direction: column;
@@ -32,18 +33,17 @@
     margin-top: 20px;
     align-self: flex-end;
     background: $label-new-BGcolor;
+    
+    h4 {
+        padding: 4px 13px;
+        margin: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $label-new-color;
+    }
 }
-
-.card-header-label h4 {
-    padding: 4px 13px;
-    margin: 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: $label-new-color;
-}
-
 .card-header-title {
     padding: 20px 0px 0px 30px;
     font-style: normal;
@@ -52,3 +52,66 @@
     line-height: 37px;
     color: $header-title-color;
 }
+
+
+
+// main
+.card-main { 
+    display: flex;
+    flex-direction: column;
+    background: $main-background;
+}
+
+.card-main-content {
+    padding: 20px 32px 25px;
+    
+    p {
+        margin: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: $main-text-color;
+    }
+    
+    p:last-child {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+}
+.card-main-price {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+        padding-right: 32px;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 36px;
+        line-height: 49px;
+        color: $new-price-color;
+    }
+    
+    span:last-child {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+        color: $old-price-color;
+        font-family: Geneva, Tahoma, sans-serif;
+        padding-bottom: 10px;
+        
+        hr {
+            margin-top: 18px;
+            position: absolute;
+            width: 100%;
+            border: 1px solid $old-price-color;
+        }
+    }
+}
+
