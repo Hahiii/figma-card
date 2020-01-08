@@ -1,0 +1,8 @@
+
+@function gradient($x, $y) {
+    @return linear-gradient(278.9deg, $x -46.53%, $y 122.31%);
+}
+
+@function bcolor($x) {
+    @return lighten($x, 42.5%)    
+}

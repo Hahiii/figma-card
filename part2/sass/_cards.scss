@@ -17,9 +17,35 @@
     flex-direction: column;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: $header-background;
-    height: 150px;
+    min-height: 160px;
 }
+
+.theme1 {
+    .card-header {
+        background: gradient($theme1-base-color1, $theme1-base-color2);
+    }
+    .card-footer{
+        background: bcolor($theme1-base-color2);
+    }
+}
+.theme2 {
+    .card-header{
+        background: gradient($theme2-base-color1, $theme2-base-color2);
+    }
+    .card-footer{
+        background: bcolor($theme2-base-color2);
+    }
+}
+.theme3 {
+    .card-header{
+        background: gradient($theme3-base-color1, $theme3-base-color2);
+    }
+    .card-footer{
+        background: bcolor($theme3-base-color2);
+    }
+}
+
+
 
 .card-label {
     margin-top: 20px;
@@ -118,7 +144,6 @@
     justify-content: space-between;
     border-radius: 0px 0px 10px 10px;
     padding: 18px 0px;
-    background: $footer-background;
 
     p {
         padding: 0px 0px 0px 32px;
