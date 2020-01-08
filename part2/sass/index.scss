@@ -1,22 +1,59 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 @import 'variables';
 @import 'cards';
 
-.wrapper {
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
-    color: $main-text-color;
+    background-color: rgb(240, 240, 240);
+    color: $dark-background;
 }
-
-
-
+.wrapper {
+    padding: 40px 0;
+    margin: auto;
+    width: 1200px;
+    background: #F9F9F9;
+    
+    
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0;
+        background: $site-header-background;    
+        margin-bottom: 200px;
+        
+        
+        h1 {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 49px;
+            margin-bottom: 60px;
+        }
+        
+        p {
+            text-align: center;
+            max-width: 65%;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+}
 
 
 
